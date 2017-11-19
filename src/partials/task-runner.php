@@ -39,9 +39,12 @@ echo htmlspecialchars($content, ENT_QUOTES);
 $arrayInput = empty($_GET['arrayInput']) ? null : htmlspecialchars(trim($_GET['arrayInput']));
 ?>
 </pre>
+    <hr>
     <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="get">
         <input type="hidden" name="taskName" value="<?= htmlspecialchars($_GET['taskName'], ENT_QUOTES) ?>">
-        <input name="arrayInput" value="<?= $arrayInput ?>">
+        <label>Enter comma separated values to test solution against them:</label>
+        <br>
+        <input name="arrayInput" value="<?= $arrayInput ?>" style="width: 400px;">
         <br>
         <input type="submit" value="Submit">
     </form>
@@ -56,9 +59,9 @@ if ($arrayInput !== null) {
     exec('php ' . $runnerPath . ' ' . $taskFilePath . ' ' . $arrayInput, $output);
     
     
-    if (empty($output) === false) {
+    if (empty($output) === false && is_array($output)) {
         echo '<h3>Result:</h3>';
-        echo '<p>';
+        echo '<p style="color: red;">';
         
         foreach ($output as $line) {
             echo $line . '<br>';

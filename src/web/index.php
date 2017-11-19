@@ -40,7 +40,4 @@ if (empty($_GET['taskName'])) {
     
 }
 
-
 echo PartialHelper::render('layout/footer');
-
-

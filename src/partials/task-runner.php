@@ -51,7 +51,6 @@ $arrayInput = empty($_GET['arrayInput']) ? null : htmlspecialchars(trim($_GET['a
 <?php
 
 if ($arrayInput !== null) {
-    
     $runnerPath = dirname(__DIR__) . '/bin/task-runner.php';
     
     $output = null;
@@ -69,8 +68,4 @@ if ($arrayInput !== null) {
         
         echo '</p>';
     }
-    
 }
-
-
-?>

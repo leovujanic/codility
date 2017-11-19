@@ -27,7 +27,7 @@ if ($taskFilePath === null) {
 }
 
 ?>
-    <h2>Task: <?= htmlspecialchars(TaskHelper::taskName($taskName), ENT_QUOTES) ?></h2>;
+    <h2>Task: <?= htmlspecialchars(TaskHelper::taskName($taskName), ENT_QUOTES) ?></h2>
     <pre>
 <?php
 

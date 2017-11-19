@@ -32,11 +32,13 @@ if (empty($_GET['taskName'])) {
     ]);
     
 } else {
+    
     echo PartialHelper::render('task-runner', [
         'tree'     => $tree,
         'taskName' => trim($_GET['taskName']),
     ]);
-} // else
+    
+}
 
 
 echo PartialHelper::render('layout/footer');

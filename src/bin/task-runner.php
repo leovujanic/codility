@@ -29,11 +29,11 @@ $testArray = explode(',', $argv[2]);
 $filterArray = [];
 
 foreach ($testArray as $testItem) {
-    $filterArray[] = (int)$testItem;
+    $filterArray[] = (int)trim($testItem);
 }
 
 
-require_once $argv[1];
+require_once $fileName;
 
 if (function_exists($function) === false) {
     throw new Exception('Function does not exists');

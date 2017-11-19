@@ -20,6 +20,12 @@ and autoloaded with composer autoload.
 Codility links can be found in comments.
 
 
+## Web interface - Task list and task runner
+
+Web root directory is `src/web` and entry script is `index.php` 
+
+
+
 ## Tests
 
 There are some unit test and you can run them by calling

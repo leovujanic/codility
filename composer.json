@@ -1,0 +1,25 @@
+{
+  "name": "leovujanic/codility",
+  "description": "Codility solutions",
+  "type": "project",
+  "authors": [
+    {
+      "name": "leovujanic",
+      "email": "leonard.vujanic@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.3"
+  },
+  "autoload": {
+    "files": [
+      "src/functions/loadLessonsSolutions.php"
+    ],
+    "psr-4": {
+      "leovujanic\\codility\\": "src/"
+    }
+  }
+}

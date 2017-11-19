@@ -1,6 +1,7 @@
 {
   "name": "leovujanic/codility",
-  "description": "Codility solutions",
+  "description": "Leo Vujanić - Codility solutions",
+  "license": "BSD-3-Clause",
   "type": "project",
   "authors": [
     {
